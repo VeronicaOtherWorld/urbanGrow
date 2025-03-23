@@ -1,7 +1,11 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import path from "path";
+import { fileURLToPath } from "url";
 
 // https://vite.dev/config/
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 export default defineConfig({
   plugins: [react()],
   server: {
@@ -9,6 +13,11 @@ export default defineConfig({
     strictPort: false, // 避免 Vite 自动换端口
     watch: {
       usePolling: true, // 监听文件变化，确保热更新正常
+    },
+  },
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "src"), // 配置 @ 指向 src
     },
   },
 });
