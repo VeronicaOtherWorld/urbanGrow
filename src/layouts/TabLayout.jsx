@@ -11,7 +11,7 @@ const TabLayout = () => {
         {/* top navbar */}
         <Navbar></Navbar>
         {/* outlet parts */}
-        <div className="flex-1 mt-20 overflow-y-auto">
+        <div className="flex-1 overflow-y-auto">
           <Outlet />
         </div>
       </div>

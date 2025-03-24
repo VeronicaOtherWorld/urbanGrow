@@ -4,11 +4,13 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <div
-      className="fixed top-0 left-0 w-full bg-white shadow-md
+      className="fixed top-0 left-0 w-full bg-transparent
      h-20 flex items-center px-4 md:px-8 z-50"
     >
       {/* logo part */}
-      <h1 className="text-xl font-bold text-green-600">UrbanGrow</h1>
+      <h1 className="text-xl bg-transparent font-bold text-green-600">
+        UrbanGrow
+      </h1>
       {/* menus */}
       <nav className="hidden md:flex gap-6 absolute left-1/2 transform -translate-x-1/2">
         <Link to="/" className="text-gray-700 hover:text-green-600">

@@ -14,9 +14,9 @@ const Footer = () => {
   return (
     <footer className="bg-[#c4c78e] w-full text-black text-sm mt-10">
       <div className="max-w-screen-xl mx-auto px-4 py-6 sm:py-10">
-        {/* 主体内容布局 */}
+        {/* main */}
         <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 gap-8 text-center lg:text-left">
-          {/* 中屏合并版：Follow + Join */}
+          {/* Follow + Join combine in one box in the middle screen */}
           <div className="md:block lg:hidden">
             <div className="mb-6">
               <h2 className="text-lg font-bold mb-2">Follow Us</h2>
@@ -34,7 +34,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* 大屏分开展示 */}
+          {/* large screen, each part display in one row */}
           <div className="hidden lg:block">
             <h2 className="text-lg font-bold mb-4">Follow Us</h2>
             <div className="flex justify-start gap-4 text-2xl">
