@@ -3,7 +3,7 @@ import clsx from "clsx";
 
 const sizeStyles = {
   clickBtn: "px-4 py-1 text-sm",
-  introBtn: "px-6 py-2 text-base",
+  introBtn: "px-16 py-3 text-base bg-[#212f1a]",
   bannerBtn: "px-16 py-3 text-lg",
 };
 

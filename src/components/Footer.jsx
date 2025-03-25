@@ -1,7 +1,9 @@
 import React from "react";
 import { FaFacebookF, FaInstagram, FaUser } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import download from "@/assets/footerPic/download.png";
+// import download from "@/assets/footerPic/download.png";
+import google from "@/assets/footerPic/google.jpg";
+import apple from "@/assets/footerPic/apple.jpg";
 
 const Footer = () => {
   const aboutList = [
@@ -12,7 +14,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-[#c4c78e] w-full text-black text-sm mt-10">
+    <footer className="bg-[#c4c78e] w-full text-black text-sm">
       <div className="max-w-screen-xl mx-auto px-4 py-6 sm:py-10">
         {/* main */}
         <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 gap-8 text-center lg:text-left">
@@ -73,8 +75,8 @@ const Footer = () => {
           <div>
             <h2 className="text-lg font-bold mb-4">Download</h2>
             <div className="flex flex-col items-center lg:items-start space-y-3">
-              <img src={download} alt="Google Play" className="w-36 sm:w-40" />
-              <img src={download} alt="App Store" className="w-36 sm:w-40" />
+              <img src={google} alt="Google Play" className="w-36 sm:w-40" />
+              <img src={apple} alt="App Store" className="w-36 sm:w-40" />
             </div>
           </div>
         </div>
