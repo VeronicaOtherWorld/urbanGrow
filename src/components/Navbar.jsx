@@ -10,6 +10,7 @@ const Navbar = () => {
     if (!isHome) return;
 
     const handleScroll = () => {
+      console.log("trigger deploy");
       setVisible(window.scrollY <= 100);
     };
 
