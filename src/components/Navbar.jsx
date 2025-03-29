@@ -30,19 +30,19 @@ const Navbar = () => {
       </h1>
       {/* menus */}
       <nav className="hidden md:flex gap-6 absolute left-1/2 transform -translate-x-1/2">
-        <Link to="/" className="text-gray-700 hover:text-green-600">
+        <Link to="/" className="text-white hover:text-green-600">
           Home
         </Link>
-        <Link to="/diagnosis" className="text-gray-700 hover:text-green-600">
+        <Link to="/diagnosis" className="text-white hover:text-green-600">
           Diagnosis
         </Link>
-        <Link to="/products" className="text-gray-700 hover:text-green-600">
+        <Link to="/products" className="text-white hover:text-green-600">
           Products
         </Link>
-        <Link to="/services" className="text-gray-700 hover:text-green-600">
+        <Link to="/services" className="text-white hover:text-green-600">
           Services
         </Link>
-        <Link to="/community" className="text-gray-700 hover:text-green-600">
+        <Link to="/community" className="text-white hover:text-green-600">
           Community
         </Link>
       </nav>

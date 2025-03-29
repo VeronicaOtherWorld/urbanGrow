@@ -10,6 +10,7 @@ import plant from "@/assets/homePic/plant.png";
 import writing from "@/assets/homePic/writing.png";
 import specialist from "@/assets/homePic/specialist.png";
 import planting from "@/assets/homePic/planting.png";
+import edibleFlower from "@/assets/homePic/3.jpg";
 
 const Home = () => {
   return (
@@ -17,17 +18,19 @@ const Home = () => {
       {/* banner pic */}
       <div
         className=" bg-cover bg-center bg-local bg-no-repeat h-screen w-full"
-        style={{ backgroundImage: `url(${bgImg2})` }}
+        style={{ backgroundImage: `url(${edibleFlower})` }}
       >
         <div className="text-white text-2xl text-center pt-24">
-          <div className="mt-40 text-black">
+          <div className="mt-40 text-white hadow-sm">
             <div>"Grow Smart, Anywhere!</div>
             <div>🌿 Snap, Scan, Thrive"</div>
             <p>Your Urban Garden Companion</p>
-            <Button size="bannerBtn">explore</Button>
+            <Button className="mt-8" size="bannerBtn">
+              explore
+            </Button>
             <div className="mt-8">
               <input
-                className="inline-block border-black border-2 rounded-lg h-12 w-60 text-base mr-2"
+                className="inline-block border-black border-2 rounded-lg h-12 w-60 text-base mr-2 placeholder:text-sm"
                 placeholder="enter your Email to keep in touch"
               ></input>
               <Button size="introBtn">Get Newsletter</Button>
@@ -75,7 +78,7 @@ const Home = () => {
             <img
               src={scan}
               alt="Scan"
-              className="w-56 h-56 rounded-3xl object-cover ml-20"
+              className="w-56 h-56 rounded-3xl object-cover"
             />
 
             {/* right side：text + button */}
@@ -99,7 +102,7 @@ const Home = () => {
             <img
               src={plant}
               alt="plant"
-              className="w-56 h-56 rounded-3xl object-cover mr-20"
+              className="w-56 h-56 rounded-3xl object-cover"
             />
 
             {/* right side：text + button */}
@@ -121,7 +124,7 @@ const Home = () => {
             <img
               src={soil}
               alt="soil"
-              className="w-56 h-56 rounded-3xl object-cover ml-20"
+              className="w-56 h-56 rounded-3xl object-cover"
             />
 
             {/* content part */}
@@ -151,7 +154,7 @@ const Home = () => {
             <img
               src={writing}
               alt="writing"
-              className="w-56 h-56 rounded-3xl object-cover ml-20"
+              className="w-56 h-56 rounded-3xl object-cover"
             />
 
             {/* right side：text + button */}
@@ -163,7 +166,7 @@ const Home = () => {
                 Set smart reminders for watering, fertilizing, and temperature
                 checks.
               </p>
-              <Button size="introBtn" className="w-auto">
+              <Button size="introBtn" className="w-auto mx-auto lg:mx-0">
                 SET REMINDER
               </Button>
             </div>
@@ -176,7 +179,7 @@ const Home = () => {
             <img
               src={specialist}
               alt="specialist"
-              className="w-56 h-56 rounded-3xl object-cover mr-20"
+              className="w-56 h-56 rounded-3xl object-cover"
             />
 
             {/* right side：text + button */}
@@ -201,7 +204,7 @@ const Home = () => {
             <img
               src={planting}
               alt="planting"
-              className="w-56 h-56 rounded-3xl object-cover ml-20"
+              className="w-56 h-56 rounded-3xl object-cover"
             />
 
             {/* content part */}
