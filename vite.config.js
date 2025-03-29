@@ -7,6 +7,7 @@ import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 export default defineConfig({
+  base: "/urbanGrow/", // 注意最后的斜杠
   plugins: [react()],
   server: {
     port: 5173, // 固定端口
