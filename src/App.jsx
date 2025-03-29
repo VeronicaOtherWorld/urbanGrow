@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import TabLayout from "./layouts/TabLayout";
 import Home from "./pages/Home";
 import Diagnosis from "./pages/Diagnosis";
@@ -9,7 +9,7 @@ import Services from "./pages/Services";
 
 function App() {
   return (
-    <Router basename="/urbanGrow/">
+    <Router>
       <Routes>
         {/* bottom tabs */}
         <Route path="/" element={<TabLayout />}>
