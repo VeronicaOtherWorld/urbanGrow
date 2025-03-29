@@ -9,7 +9,7 @@ import Services from "./pages/Services";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/urbanGrow/">
       <Routes>
         {/* bottom tabs */}
         <Route path="/" element={<TabLayout />}>
