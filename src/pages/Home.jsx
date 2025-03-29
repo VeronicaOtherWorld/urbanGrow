@@ -5,6 +5,11 @@ import Button from "@/components/Button";
 import appImg from "@/assets/homePic/app.jpg";
 import scan from "@/assets/homePic/scan.png";
 import monstera2 from "@/assets/homePic/monstera2.jpg";
+import soil from "@/assets/homePic/soil.png";
+import plant from "@/assets/homePic/plant.png";
+import writing from "@/assets/homePic/writing.png";
+import specialist from "@/assets/homePic/specialist.png";
+import planting from "@/assets/homePic/planting.png";
 
 const Home = () => {
   return (
@@ -70,7 +75,7 @@ const Home = () => {
             <img
               src={scan}
               alt="Scan"
-              className="w-56 h-56 rounded-3xl object-cover"
+              className="w-56 h-56 rounded-3xl object-cover ml-20"
             />
 
             {/* right side：text + button */}
@@ -92,9 +97,9 @@ const Home = () => {
           <div className="flex flex-col lg:flex-row-reverse items-center lg:items-center gap-8 w-fit">
             {/* pic part */}
             <img
-              src={scan}
-              alt="Scan"
-              className="w-56 h-56 rounded-3xl object-cover"
+              src={plant}
+              alt="plant"
+              className="w-56 h-56 rounded-3xl object-cover mr-20"
             />
 
             {/* right side：text + button */}
@@ -114,9 +119,9 @@ const Home = () => {
           <div className="flex flex-col-reverse lg:flex-row items-center gap-8 w-full">
             {/* pic part */}
             <img
-              src={scan}
-              alt="Scan"
-              className="w-56 h-56 rounded-3xl object-cover"
+              src={soil}
+              alt="soil"
+              className="w-56 h-56 rounded-3xl object-cover ml-20"
             />
 
             {/* content part */}
@@ -144,9 +149,9 @@ const Home = () => {
           <div className="flex flex-col lg:flex-row items-center lg:items-center gap-8 w-full">
             {/* pic part */}
             <img
-              src={scan}
-              alt="Scan"
-              className="w-56 h-56 rounded-3xl object-cover"
+              src={writing}
+              alt="writing"
+              className="w-56 h-56 rounded-3xl object-cover ml-20"
             />
 
             {/* right side：text + button */}
@@ -169,9 +174,9 @@ const Home = () => {
           <div className="flex flex-col lg:flex-row-reverse items-center lg:items-center gap-8 w-fit">
             {/* pic part */}
             <img
-              src={scan}
-              alt="Scan"
-              className="w-56 h-56 rounded-3xl object-cover"
+              src={specialist}
+              alt="specialist"
+              className="w-56 h-56 rounded-3xl object-cover mr-20"
             />
 
             {/* right side：text + button */}
@@ -194,9 +199,9 @@ const Home = () => {
           <div className="flex flex-col-reverse lg:flex-row items-center gap-8 w-full">
             {/* pic part */}
             <img
-              src={scan}
-              alt="Scan"
-              className="w-56 h-56 rounded-3xl object-cover"
+              src={planting}
+              alt="planting"
+              className="w-56 h-56 rounded-3xl object-cover ml-20"
             />
 
             {/* content part */}
