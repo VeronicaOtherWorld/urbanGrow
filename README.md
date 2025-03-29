@@ -5,6 +5,7 @@ React + JavaScript + Tailwind
 ```
 npm i
 npm run dev
+
 ```
 
 # React + Vite
