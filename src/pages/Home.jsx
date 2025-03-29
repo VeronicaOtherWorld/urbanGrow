@@ -82,7 +82,7 @@ const Home = () => {
                 Instantly analyze your plant’s health with a simple scan.
               </p>
               <Button size="introBtn" className="w-auto">
-                1
+                SCAN A PLANT
               </Button>
             </div>
           </div>
@@ -100,10 +100,11 @@ const Home = () => {
             {/* right side：text + button */}
             <div className="flex flex-col items-center lg:items-start text-center lg:text-left justify-center h-56">
               <h2 className="text-2xl font-bold mb-2">
-                "Snap a Pic, Let AI Do the Rest!"
+                "Smart Insights for Healthier Plants!"
               </h2>
               <p className="mb-6">
-                Instantly analyze your plant’s health with a simple scan.
+                Get instant AI-powered analysis to detect diseases, pests, and
+                deficiencies.
               </p>
             </div>
           </div>
@@ -121,13 +122,13 @@ const Home = () => {
             {/* content part */}
             <div className="flex flex-col items-center text-center lg:items-start lg:text-left justify-center h-56 w-full">
               <h2 className="text-2xl font-bold mb-2">
-                "Snap a Pic, Let AI Do the Rest!"
+                "The Right Care, Right Away!"
               </h2>
               <p className="mb-6">
-                Instantly analyze your plant’s health with a simple scan.
+                Personalized product suggestions to keep your plants thriving
               </p>
               <Button size="introBtn" className="w-auto mx-auto lg:mx-0">
-                1
+                BUY NOW
               </Button>
             </div>
           </div>
@@ -151,13 +152,14 @@ const Home = () => {
             {/* right side：text + button */}
             <div className="flex flex-col items-center lg:items-start text-center lg:text-left justify-center h-56 w-full">
               <h2 className="text-2xl font-bold mb-2">
-                "Snap a Pic, Let AI Do the Rest!"
+                "Never Forget to Water Again!"
               </h2>
               <p className="mb-6">
-                Instantly analyze your plant’s health with a simple scan.
+                Set smart reminders for watering, fertilizing, and temperature
+                checks.
               </p>
               <Button size="introBtn" className="w-auto">
-                1
+                SET REMINDER
               </Button>
             </div>
           </div>
@@ -175,11 +177,15 @@ const Home = () => {
             {/* right side：text + button */}
             <div className="flex flex-col items-center lg:items-start text-center lg:text-left justify-center h-56">
               <h2 className="text-2xl font-bold mb-2">
-                "Snap a Pic, Let AI Do the Rest!"
+                "Talk to Plant Gurus!"
               </h2>
               <p className="mb-6">
-                Instantly analyze your plant’s health with a simple scan.
+                Get real advice from horticulturists and plant experts when you
+                need it.
               </p>
+              <Button size="introBtn" className="w-auto mx-auto lg:mx-0">
+                CONSULT AN EXPERT
+              </Button>
             </div>
           </div>
         </div>
@@ -196,13 +202,14 @@ const Home = () => {
             {/* content part */}
             <div className="flex flex-col items-center text-center lg:items-start lg:text-left justify-center h-56 w-full">
               <h2 className="text-2xl font-bold mb-2">
-                "Snap a Pic, Let AI Do the Rest!"
+                "Grow Together, Learn Together!"
               </h2>
               <p className="mb-6">
-                Instantly analyze your plant’s health with a simple scan.
+                Share experiences, tips, and plant love with fellow urban
+                gardeners
               </p>
               <Button size="introBtn" className="w-auto mx-auto lg:mx-0">
-                1
+                JOIN NOW!
               </Button>
             </div>
           </div>
