@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const Navbar = () => {
   const [visible, setVisible] = useState(true);
@@ -41,9 +42,37 @@ const Navbar = () => {
         <Link to="/products" className="text-[#91cd4c] hover:text-green-600">
           Products
         </Link>
-        <Link to="/services" className="text-[#91cd4c] hover:text-green-600">
-          Services
-        </Link>
+
+        {/* Services with dropdown */}
+        <div className="relative group">
+          <Link
+            to="/services"
+            className="text-[#91cd4c] hover:text-green-600 px-2 py-1"
+          >
+            Services
+          </Link>
+
+          <div
+            className="absolute left-1/2 -translate-x-1/2 top-full bg-white shadow-md rounded-xl px-4 py-2 z-50
+                  hidden group-hover:flex space-x-6 pointer-events-auto transition-all duration-150 hover:delay-100"
+          >
+            <HashLink
+              smooth
+              to="/services#experts"
+              className="text-[#91cd4c] text-center"
+            >
+              Expert
+            </HashLink>
+            <HashLink
+              smooth
+              to="/services#helpers"
+              className="text-[#91cd4c] text-center"
+            >
+              Helper
+            </HashLink>
+          </div>
+        </div>
+
         <Link to="/community" className="text-[#91cd4c] hover:text-green-600">
           Community
         </Link>
