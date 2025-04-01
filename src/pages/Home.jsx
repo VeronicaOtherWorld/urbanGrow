@@ -20,11 +20,11 @@ const Home = () => {
         className=" bg-cover bg-center bg-local bg-no-repeat h-screen w-full"
         style={{ backgroundImage: `url(${edibleFlower})` }}
       >
-        <div className="text-white text-2xl text-center pt-24">
+        <div className="relative z-20 text-white text-5xl text-center pt-24 drop-shadow-lg">
           <div className="mt-40 text-white hadow-sm">
-            <div>"Grow Smart, Anywhere!</div>
-            <div>🌿 Snap, Scan, Thrive"</div>
-            <p>Your Urban Garden Companion</p>
+            <div className="tracking-widest">"Grow Smart, Anywhere!</div>
+            <div className="tracking-widest">🌿 Snap, Scan, Thrive"</div>
+            <p className="tracking-widest">Your Urban Garden Companion</p>
             <Button className="mt-8" size="bannerBtn">
               explore
             </Button>
@@ -37,6 +37,7 @@ const Home = () => {
             </div>
           </div>
         </div>
+        <div className="absolute inset-0 bg-black bg-opacity-40 z-10" />
       </div>
       {/* mobile app */}
       <div className="flex text-white bg-[#24401a] py-20">
