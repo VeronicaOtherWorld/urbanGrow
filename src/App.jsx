@@ -10,6 +10,14 @@ import Services from "./pages/Services";
 function App() {
   useEffect(() => {
     if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.getRegistrations().then((registrations) => {
+        for (let registration of registrations) {
+          if (registration.waiting) {
+            registration.waiting.postMessage({ type: "SKIP_WAITING" });
+          }
+        }
+      });
+
       navigator.serviceWorker.addEventListener("controllerchange", () => {
         if (window.confirm("New version available. Refresh now?")) {
           window.location.reload();
