@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import TabLayout from "./layouts/TabLayout";
 import Home from "./pages/Home";
@@ -8,9 +8,20 @@ import Community from "./pages/Community";
 import Services from "./pages/Services";
 
 function App() {
+  useEffect(() => {
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.addEventListener("controllerchange", () => {
+        if (window.confirm("New version available. Refresh now?")) {
+          window.location.reload();
+        }
+      });
+    }
+  }, []);
+
   return (
     <Router>
       <Routes>
+        {" "}
         {/* bottom tabs */}
         <Route path="/" element={<TabLayout />}>
           <Route index element={<Home />} />

@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) navigator.serviceWorker.register('/urbanGrow/dev-sw.js?dev-sw', { scope: '/urbanGrow/', type: 'classic' })
