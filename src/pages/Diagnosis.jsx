@@ -6,7 +6,7 @@ import scan from "@/assets/homePic/scan.png";
 import { predefinedResponses } from "@/constants/mockData";
 import "@/css/ diagnosisCss.css";
 
-export default function Diagnosis() {
+const Diagnosis = () => {
   // if is scan
   const [isScanning, setIsScanning] = useState(false);
   // if finish scanning
@@ -177,4 +177,5 @@ export default function Diagnosis() {
       )}
     </div>
   );
-}
+};
+export default Diagnosis;

@@ -6,6 +6,7 @@ import Diagnosis from "./pages/Diagnosis";
 import Products from "./pages/Products";
 import Community from "./pages/Community";
 import Services from "./pages/Services";
+import PostDetail from "./pages/PostDetail";
 
 function App() {
   useEffect(() => {
@@ -37,6 +38,7 @@ function App() {
           <Route path="Products" element={<Products />} />
           <Route path="services" element={<Services />} />
           <Route path="community" element={<Community />} />
+          <Route path="/community/:postId" element={<PostDetail />} />
         </Route>
       </Routes>
     </Router>
