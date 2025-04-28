@@ -140,7 +140,7 @@ const Community = () => {
         {posts.length === 0 ? (
           <p>No posts yet. Click "New Post" to create one!</p>
         ) : (
-          <div className="columns-2 md:columns-2 lg:columns-3 gap-6 space-y-6">
+          <div className="columns-2 md:columns-3 lg:columns-3 gap-6 space-y-6">
             {posts.map((post) => (
               <Link
                 to={`/community/${post.id}`}
