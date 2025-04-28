@@ -120,7 +120,7 @@ const Community = () => {
   return (
     <div className="flex flex-col md:flex-row min-h-screen p-4 mt-24 max-w-7xl mx-auto">
       {/* left user */}
-      <div className="md:block w-1/5 p-2 flex flex-col items-center text-center">
+      <div className="hidden md:block w-1/6 p-2 flex flex-col items-center text-center">
         <h2 className="text-lg font-bold mb-2">Profile</h2>
         <div className="flex flex-col items-center bg-white p-4  space-y-2">
           <img
@@ -135,7 +135,7 @@ const Community = () => {
       </div>
 
       {/* mid post list */}
-      <div className="flex-1 p-2 flex flex-col">
+      <div className="flex-1 p-2">
         {/* <h1 className="text-2xl font-bold mb-4">Community Posts</h1> */}
         {posts.length === 0 ? (
           <p>No posts yet. Click "New Post" to create one!</p>
@@ -155,7 +155,7 @@ const Community = () => {
       </div>
 
       {/* right products */}
-      <div className="md:block w-1/5 p-2 flex flex-col items-center text-center">
+      <div className="hidden md:block w-1/6 p-2 flex flex-col items-center text-center">
         <h2 className="text-lg font-bold mb-2">Products</h2>
         {mockProducts.map((product) => (
           <ProductCard key={product.id} product={product} />
