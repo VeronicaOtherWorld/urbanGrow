@@ -48,10 +48,21 @@ export const defaultPosts = [
   {
     id: "default-1",
     title: "Welcome to UrbanGrow!",
-    content: "Share your planting experiences here!",
+    content: `
+            <p>UrbanGrow is an innovative web-based platform that combines artificial intelligence 
+            and plant care to help urban gardeners take better care of their plants. 
+            The system allows users to upload images of their plants for automatic recognition 
+            using AI technology. Once identified, the platform provides detailed plant care tips, 
+            such as optimal sunlight, watering schedules, and soil recommendations. Users can also 
+            track their plants’ growth and share their experiences with a community of plant 
+            enthusiasts.</p>
+            <p>Designed for both novice and experienced gardeners, UrbanGrow empowers users 
+            to create thriving green spaces in urban environments. With the integration of 
+            advanced AI and a user-friendly interface, this project aims to make plant care 
+            accessible to everyone, regardless of their gardening expertise.</p>`,
     bgImg: "/urbanGrow/images/bg2.jpg",
     person: {
-      name: "Admin",
+      name: "Raj",
       title: "Community Manager",
       image: "/images/bg2.jpg",
     },
