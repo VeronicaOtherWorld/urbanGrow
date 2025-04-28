@@ -60,7 +60,7 @@ export const defaultPosts = [
             to create thriving green spaces in urban environments. With the integration of 
             advanced AI and a user-friendly interface, this project aims to make plant care 
             accessible to everyone, regardless of their gardening expertise.</p>`,
-    bgImg: "/urbanGrow/images/bg2.jpg",
+    bgImg: "/urbanGrow/images/edibleFlower.jpg",
     person: {
       name: "Raj",
       title: "Community Manager",
