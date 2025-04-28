@@ -19,7 +19,7 @@ const Community = () => {
 
   // user info
   const user = {
-    name: "admin",
+    name: "Raj",
     title: "community manager",
     desc: "Loves planting tomatoes!",
     image: writing,
