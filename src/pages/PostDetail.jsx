@@ -15,6 +15,11 @@ const PostDetail = () => {
     setPost(foundPost);
   }, [postId]);
 
+  // keep the page not display the bottom
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   if (!post) {
     return <div className="p-8">Loading...</div>;
   }

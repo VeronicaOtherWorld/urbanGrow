@@ -48,6 +48,11 @@ const Community = () => {
     }
   }, [showModal]);
 
+  // keep the page not display the bottom
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   // post method
   const handleSubmitPost = () => {
     if (!newPostTitle.trim() || !newPostContent.trim()) {
