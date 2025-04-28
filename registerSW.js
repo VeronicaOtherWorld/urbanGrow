@@ -1,1 +1,0 @@
-if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/urbanGrow/sw.js', { scope: '/urbanGrow/' })})}
