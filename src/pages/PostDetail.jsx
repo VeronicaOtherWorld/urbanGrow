@@ -1,12 +1,13 @@
 // src/pages/PostDetail.jsx
 
 import React, { useState, useEffect } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useNavigate } from "react-router-dom";
 import planting from "@/assets/homePic/planting.png";
 
 const PostDetail = () => {
   const { postId } = useParams();
   const [post, setPost] = useState(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const storedPosts = JSON.parse(localStorage.getItem("posts")) || [];
@@ -18,15 +19,31 @@ const PostDetail = () => {
     return <div className="p-8">Loading...</div>;
   }
 
+  // delete
+  const handleDeletePost = () => {
+    if (!window.confirm("Are you sure you want to delete this post?")) {
+      return;
+    }
+
+    const storedPosts = JSON.parse(localStorage.getItem("posts")) || [];
+    const updatedPosts = storedPosts.filter((p) => p.id !== postId);
+    localStorage.setItem("posts", JSON.stringify(updatedPosts));
+
+    navigate("/community");
+  };
+
   return (
     <div className="max-w-2xl mx-auto mt-24 p-4">
       {/* return button */}
-      <Link
-        to="/community"
-        className="text-green-600 text-sm mb-6 inline-block"
-      >
-        ← Back to Community
-      </Link>
+      <div className="flex justify-between items-center mb-6">
+        <Link to="/community" className="text-green-600 text-sm">
+          ← Back to Community
+        </Link>
+
+        <button onClick={handleDeletePost} className="text-red-500 text-sm">
+          Delete
+        </button>
+      </div>
 
       {/* cover pic */}
       <img
