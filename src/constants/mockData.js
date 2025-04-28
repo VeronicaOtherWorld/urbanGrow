@@ -55,7 +55,7 @@ export const defaultPosts = [
             using AI technology. Once identified, the platform provides detailed plant care tips, 
             such as optimal sunlight, watering schedules, and soil recommendations. Users can also 
             track their plants’ growth and share their experiences with a community of plant 
-            enthusiasts.</p>
+            enthusiasts. </p>
             <p>Designed for both novice and experienced gardeners, UrbanGrow empowers users 
             to create thriving green spaces in urban environments. With the integration of 
             advanced AI and a user-friendly interface, this project aims to make plant care 
