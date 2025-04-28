@@ -5,6 +5,7 @@ import { Loader2, Camera, Bot } from "lucide-react";
 import scan from "@/assets/homePic/scan.png";
 import { predefinedResponses } from "@/constants/mockData";
 import "@/css/ diagnosisCss.css";
+import ProductCard from "@/components/ProductCard";
 
 const Diagnosis = () => {
   // if is scan
@@ -134,17 +135,7 @@ const Diagnosis = () => {
                         href={chat.product.link}
                         className="animate-fade-in"
                       >
-                        <div className="mt-2 p-4 border rounded bg-white shadow text-sm max-w-[75%] space-y-1">
-                          <div className="font-semibold break-words">
-                            {chat.product.name}
-                          </div>
-                          <div className="text-gray-600 break-words">
-                            {chat.product.description}
-                          </div>
-                          <div className="text-blue-500 underline inline-block">
-                            View Product
-                          </div>
-                        </div>
+                        <ProductCard product={chat.product} />
                       </a>
                     )}
                 </div>

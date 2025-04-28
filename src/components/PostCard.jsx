@@ -8,7 +8,7 @@ const PostCard = ({ post }) => {
     <div className="bg-white rounded-xl shadow overflow-hidden flex flex-col hover:shadow-lg transition duration-300">
       {/* pic */}
       <img
-        src={post.image || planting}
+        src={post.bgImg || planting}
         alt={post.title || "Post image"}
         className="w-full h-48 object-cover"
       />

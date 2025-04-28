@@ -33,7 +33,7 @@ const PostDetail = () => {
   };
 
   return (
-    <div className="max-w-2xl mx-auto mt-24 p-4">
+    <div className="max-w-2xl mx-auto mt-24 p-4 mb-24">
       {/* return button */}
       <div className="flex justify-between items-center mb-6">
         <Link to="/community" className="text-green-600 text-sm">
@@ -47,7 +47,7 @@ const PostDetail = () => {
 
       {/* cover pic */}
       <img
-        src={post.image}
+        src={post.bgImg}
         alt={post.title || "Post Image"}
         className="w-full h-64 object-cover rounded-lg mb-6"
       />

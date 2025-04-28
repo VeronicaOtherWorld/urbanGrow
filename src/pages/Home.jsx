@@ -1,6 +1,5 @@
 // src/pages/Home.jsx
 import bgImg from "@/assets/homePic/bg.jpg";
-import bgImg2 from "@/assets/homePic/bg2.jpg";
 import Button from "@/components/Button";
 import appImg from "@/assets/homePic/app.jpg";
 import scan from "@/assets/homePic/scan.png";

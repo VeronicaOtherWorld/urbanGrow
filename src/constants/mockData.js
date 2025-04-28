@@ -44,3 +44,100 @@ export const predefinedResponses = [
     },
   },
 ];
+export const defaultPosts = [
+  {
+    id: "default-1",
+    title: "Welcome to UrbanGrow!",
+    content: "Share your planting experiences here!",
+    bgImg: "/urbanGrow/images/bg2.jpg",
+    person: {
+      name: "Admin",
+      title: "Community Manager",
+      image: "/images/bg2.jpg",
+    },
+  },
+  {
+    id: "default-2",
+    title: "Tips for New Gardeners",
+    content: "Start with easy plants like mint or basil!",
+    bgImg: "/urbanGrow/images/bg2.jpg",
+    person: {
+      name: "Lisa",
+      title: "Urban Gardener",
+      image: "/urbanGrow/images/bg2.jpg",
+    },
+  },
+  {
+    id: "default-3",
+    title: "How Often Should You Water?",
+    content: "For most plants, watering once a week is enough.",
+    bgImg: "/urbanGrow/images/bg2.jpg",
+    person: {
+      name: "Alice",
+      title: "Plant Enthusiast",
+      image: "/urbanGrow/images/bg2.jpg",
+    },
+  },
+  {
+    id: "default-4",
+    title: "Choosing the Right Soil",
+    content: "Good soil makes strong roots. Choose light, breathable types!",
+    bgImg: "/urbanGrow/images/bg2.jpg",
+    person: {
+      name: "Bob",
+      title: "Nature Explorer",
+      image: "/urbanGrow/images/bg2.jpg",
+    },
+  },
+  {
+    id: "default-5",
+    title: "Best Indoor Plants",
+    content: "Snake plants and pothos are perfect for beginners indoors!",
+    bgImg: "/urbanGrow/images/bg2.jpg",
+    person: {
+      name: "Coco",
+      title: "Home Gardener",
+      image: "/urbanGrow/images/bg2.jpg",
+    },
+  },
+  {
+    id: "default-6",
+    title: "Sunlight Needs Explained",
+    content: "Most herbs need 4-6 hours of sunlight daily to thrive.",
+    bgImg: "/urbanGrow/images/bg2.jpg",
+    person: {
+      name: "Daisy",
+      title: "Botany Lover",
+      image: "/urbanGrow/images/bg2.jpg",
+    },
+  },
+];
+
+// src/constants/mockProducts.js
+
+export const mockProducts = [
+  {
+    id: "001",
+    name: "Grow Light Lamp",
+    description: "Helps your plant get sunlight indoors.",
+    link: "https://reurl.cc/yR7kgy",
+  },
+  {
+    id: "002",
+    name: "Water Bottle",
+    description: "Perfect for watering delicate plants.",
+    link: "https://reurl.cc/Z4WX7Q",
+  },
+  {
+    id: "003",
+    name: "Plant Soil Mix",
+    description: "Nutrient-rich soil for healthy growth.",
+    link: "https://reurl.cc/Z4WX7Q",
+  },
+  {
+    id: "004",
+    name: "Humidity Tray",
+    description: "Helps maintain humidity for tropical plants.",
+    link: "https://reurl.cc/Z4WX7Q",
+  },
+];

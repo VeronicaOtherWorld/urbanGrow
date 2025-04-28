@@ -7,6 +7,8 @@ import "react-quill/dist/quill.snow.css";
 import { v4 as uuidv4 } from "uuid";
 import PostCard from "@/components/PostCard";
 import writing from "@/assets/homePic/writing.png";
+import { defaultPosts, mockProducts } from "@/constants/mockData";
+import ProductCard from "@/components/ProductCard";
 
 const Community = () => {
   const [posts, setPosts] = useState([]);
@@ -15,10 +17,25 @@ const Community = () => {
   const [newPostContent, setNewPostContent] = useState("");
   const [newPostImage, setNewPostImage] = useState(null);
 
+  // user info
+  const user = {
+    name: "admin",
+    title: "community manager",
+    desc: "Loves planting tomatoes!",
+    image: writing,
+  };
+
   // load posts in localstorage
   useEffect(() => {
-    const storedPosts = JSON.parse(localStorage.getItem("posts")) || [];
-    setPosts(storedPosts);
+    const storedPosts = JSON.parse(localStorage.getItem("posts"));
+
+    if (!storedPosts || storedPosts.length === 0) {
+      // add default posts
+      setPosts(defaultPosts);
+      localStorage.setItem("posts", JSON.stringify(defaultPosts));
+    } else {
+      setPosts(storedPosts);
+    }
   }, []);
 
   useEffect(() => {
@@ -37,6 +54,8 @@ const Community = () => {
       alert("Title and content cannot be empty");
       return;
     }
+
+    // post authors
     const authors = [
       {
         name: "Lisa",
@@ -72,9 +91,10 @@ const Community = () => {
       content: newPostContent,
       person: randomAuthor,
       image: newPostImage || writing,
+      bgImg: newPostImage || writing,
     };
 
-    const updatedPosts = [...posts, newPost];
+    const updatedPosts = [newPost, ...posts];
     setPosts(updatedPosts);
     localStorage.setItem("posts", JSON.stringify(updatedPosts));
 
@@ -87,23 +107,36 @@ const Community = () => {
   const handleImageChange = (e) => {
     const file = e.target.files[0];
     if (file) {
-      const imageUrl = URL.createObjectURL(file);
-      setNewPostImage(imageUrl);
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        // base64
+        // in case lost pic after refresh
+        setNewPostImage(reader.result);
+      };
+      reader.readAsDataURL(file);
     }
   };
 
   return (
-    <div className="flex flex-col md:flex-row min-h-screen p-4 mt-24 relative">
+    <div className="flex flex-col md:flex-row min-h-screen p-4 mt-24 max-w-7xl mx-auto">
       {/* left user */}
-      <div className="hidden md:block md:w-2/12 p-2">
+      <div className="md:block w-1/5 p-2 flex flex-col items-center text-center">
         <h2 className="text-lg font-bold mb-2">Profile</h2>
-        <p>Username</p>
-        <p>Short Bio</p>
+        <div className="flex flex-col items-center bg-white p-4  space-y-2">
+          <img
+            src={user.image}
+            alt={user.name}
+            className="w-20 h-20 rounded-full object-cover"
+          />
+          <h2 className="text-lg font-bold">{user.name}</h2>
+          <p className="text-sm text-gray-600">{user.title}</p>
+          <p className="text-xs text-gray-500 text-center">{user.desc}</p>
+        </div>
       </div>
 
       {/* mid post list */}
-      <div className="md:w-7/12 p-2">
-        <h1 className="text-2xl font-bold mb-4">Community Posts</h1>
+      <div className="flex-1 p-2 flex flex-col">
+        {/* <h1 className="text-2xl font-bold mb-4">Community Posts</h1> */}
         {posts.length === 0 ? (
           <p>No posts yet. Click "New Post" to create one!</p>
         ) : (
@@ -122,10 +155,11 @@ const Community = () => {
       </div>
 
       {/* right products */}
-      <div className="hidden md:block md:w-3/12 p-2">
+      <div className="md:block w-1/5 p-2 flex flex-col items-center text-center">
         <h2 className="text-lg font-bold mb-2">Products</h2>
-        <p>Plant A</p>
-        <p>Plant B</p>
+        {mockProducts.map((product) => (
+          <ProductCard key={product.id} product={product} />
+        ))}
       </div>
 
       {/* post button */}
