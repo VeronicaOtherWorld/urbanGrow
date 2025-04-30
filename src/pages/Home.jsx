@@ -130,7 +130,7 @@ const Home = () => {
             {/* content part */}
             <div className="flex flex-col items-center text-center lg:items-start lg:text-left justify-center h-56 w-full">
               <h2 className="text-2xl font-bold mb-2">
-                "The Right Care, Right Away!"
+                "Personalized Products recommendations!"
               </h2>
               <p className="mb-6">
                 Personalized product suggestions to keep your plants thriving
